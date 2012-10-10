@@ -1,5 +1,5 @@
 Beaglebone - Controlling a 4x20 LCD (HD44780) using Perl
-
+==========
 Enclosed is a working demo in a single file.  Review the %PINS hash for the LCD to Beaglebone wiring or see below. 
 
 LCD Pin		LCD Pin Connects to
@@ -20,4 +20,3 @@ LCD Pin		LCD Pin Connects to
 14	Data7	BeagleBone pin P8_14
 
 Next on the agenda is to separate the LCD functions into its own module.
-==========
