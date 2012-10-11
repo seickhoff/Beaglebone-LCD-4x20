@@ -1,12 +1,12 @@
 Beaglebone - Controlling a 4x20 LCD (HD44780) using Perl
 ==========
 
-1. LCD.pm & example.pl
+1 - LCD.pm & example.pl
 
 This is the Perl LCD package and example usage.  For wiring, review the constructor in LCD.pm.
 
 
-2. lcd_hd44780.pl
+2 - lcd_hd44780.pl
 
 This was the original proof of concept in a single file.  Review the %PINS hash for the LCD to 
 Beaglebone wiring or see below. 
