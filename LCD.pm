@@ -33,7 +33,7 @@ sub new {
 	my $self  = {};
 
 	$self->{RS}{gpio} 	= $config{RS}{gpio} || "GPIO1_7";
-	$self->{RS}{header} = $config{RS}{header} || "P8_4";
+	$self->{RS}{header} 	= $config{RS}{header} || "P8_4";
 	$self->{RS}{pin} 	= $config{RS}{pin} || 39;
 	$self->{RS}{dir} 	= $config{RS}{dir} || "out";
 	$self->{RS}{mode} 	= $config{RS}{mode} || 7;
@@ -49,7 +49,7 @@ sub new {
 	$self->{E}{fh} 		= undef;		
 	
 	$self->{D4}{gpio} 	= $config{D4}{gpio} || "GPIO1_2";
-	$self->{D4}{header} = $config{D4}{header} || "P8_5";
+	$self->{D4}{header} 	= $config{D4}{header} || "P8_5";
 	$self->{D4}{pin} 	= $config{D4}{pin} || 34;
 	$self->{D4}{dir} 	= $config{D4}{dir} || "out";
 	$self->{D4}{mode} 	= $config{D4}{mode} || 7;
@@ -57,7 +57,7 @@ sub new {
 	$self->{D4}{fh} 	= undef;
 	
 	$self->{D5}{gpio} 	= $config{D5}{gpio} || "GPIO1_13";
-	$self->{D5}{header} = $config{D5}{header} || "P8_11";
+	$self->{D5}{header} 	= $config{D5}{header} || "P8_11";
 	$self->{D5}{pin} 	= $config{D5}{pin} || 45;
 	$self->{D5}{dir} 	= $config{D5}{dir} || "out";
 	$self->{D5}{mode} 	= $config{D5}{mode} || 7;
@@ -65,7 +65,7 @@ sub new {
 	$self->{D5}{fh} 	= undef;
 	
 	$self->{D6}{gpio} 	= $config{D6}{gpio} || "GPIO1_12";
-	$self->{D6}{header} = $config{D6}{header} || "P8_12";
+	$self->{D6}{header} 	= $config{D6}{header} || "P8_12";
 	$self->{D6}{pin} 	= $config{D6}{pin} || 44;
 	$self->{D6}{dir} 	= $config{D6}{dir} || "out";
 	$self->{D6}{mode} 	= $config{D6}{mode} || 7;
@@ -73,7 +73,7 @@ sub new {
 	$self->{D6}{fh} 	= undef;
 	
 	$self->{D7}{gpio} 	= $config{D7}{gpio} || "GPIO0_26";
-	$self->{D7}{header} = $config{D7}{header} || "P8_14";
+	$self->{D7}{header} 	= $config{D7}{header} || "P8_14";
 	$self->{D7}{pin} 	= $config{D7}{pin} || 26;
 	$self->{D7}{dir} 	= $config{D7}{dir} || "out";
 	$self->{D7}{mode} 	= $config{D7}{mode} || 7;
