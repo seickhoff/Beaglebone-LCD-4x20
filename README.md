@@ -12,7 +12,7 @@ This was the original proof of concept in a single file.  Review the %PINS hash 
 Beaglebone wiring or see below. 
 
 
-  LCD pin. Description, Connection
+  LCD Signal, Connection
 
   1. VSS, Ground
   2. VDD, +5V
