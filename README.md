@@ -21,7 +21,13 @@ Create an LCD object instance using the default parameters.  The default paramet
 $lcd  = LCD->new();
 ```
 
-To use a custom configuration, supply a hash to the constructor to override any of the defaults.
+To use a custom configuration, supply a hash to the constructor to override any of the defaults. Valid keys are RS, E, D4, D5, D6 and D7.  Here are the sub-keys:
+
+* gpio - GPIO bank label (not actually used for anything)
+* header - GPIO header label (not actually used for anything)
+* pin - PIN number for exporting
+* mode - Declare the mode number of the GPIO pin (typically 7)
+* mode0 - Declare the mode 0 name of the GPIO pin
 
 ```perl
 my %CONFIG = (
@@ -29,7 +35,6 @@ my %CONFIG = (
                 "gpio" => "GPIO1_7",
                 "header" => "P8_4",
                 "pin" => 39,
-                "dir" => "out",
                 "mode" => 7,
                 "mode0" => "gpmc_ad7"
         },
@@ -37,7 +42,6 @@ my %CONFIG = (
                 "gpio" => "GPIO1_6",
                 "header" => "P8_3",
                 "pin" => 38,
-                "dir" => "out",
                 "mode" => 7,
                 "mode0" => "gpmc_ad6"
         }
@@ -68,24 +72,3 @@ Use the **close** method to release (unexport) the GPIO configuration.
 ```perl
 $lcd->close; 
 ```
-
-
-
-2 - lcd_hd44780.pl
--------------
-This was the original proof of concept in a single file.  Review the %PINS hash for the LCD to 
-Beaglebone wiring or see below. 
-
-#### LCD Signal, Connection
-
-* VSS, Ground
-* VDD, +5V
-* VO, Attach to potentiometer wiper to adjust contrast
-* RS, Beaglebone pin P8_4
-* R/W, Ground
-* E, BeagleBone pin P8_3
-* Data4, Beaglebone pin P8_5
-* Data5, Beaglebone pin P8_11
-* Data6, Beaglebone pin P8_12
-* Data7, Beaglebone pin P8_14
-
