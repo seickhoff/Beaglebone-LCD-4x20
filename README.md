@@ -1,4 +1,4 @@
-## Beaglebone - Controlling a 4x20 LCD (HD44780) in 4-bit mode using Perl
+## Controlling a 4x20 LCD (HD44780) in 4-bit mode using Perl
 
 ### LCD.pm
 
