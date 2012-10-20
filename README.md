@@ -4,6 +4,29 @@
 
 This is the Perl LCD package and example usage.  For wiring, review the constructor in LCD.pm.
 
+```perl
+my %PINS = (
+        "RS" => {
+                "gpio" => "GPIO1_7",
+                "header" => "P8_4",
+                "pin" => 39,
+                "dir" => "out",
+                "mode" => 7,
+                "mode0" => "gpmc_ad7",
+                "fh" => undef
+        },
+        "E" => {
+                "gpio" => "GPIO1_6",
+                "header" => "P8_3",
+                "pin" => 38,
+                "dir" => "out",
+                "mode" => 7,
+                "mode0" => "gpmc_ad6",
+                "fh" => undef
+        }
+);
+```
+
 
 2 - lcd_hd44780.pl
 -------------
